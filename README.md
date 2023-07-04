@@ -4,7 +4,7 @@
 
 This repo is the fine-tuning part in the paper below.
 
-***Pay Attention to the Robustness of Chinese Minority Language Models! Syllable-level Textual Adversarial Attack on Tibetan Script (Cao et al.)***
+***Pay Attention to the Robustness of Chinese Minority Language Models! Syllable-level Textual Adversarial Attack on Tibetan Script (Cao et al., ACL 2023 Workshop - TrustNLP)***
 
 ## Environment
 
@@ -78,3 +78,14 @@ dir：fine-tuning
 ## Fine-tuned LMs
 
 dir：saved_model
+
+You can also find all the fine-tuned LMs in our paper on Hugging Face.
+
+|                LM                 |                                                                    URL                                                                    |
+|:---------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------:|
+|   cino-base-v2_TNCC-title_tsheg   |     [https://huggingface.co/UTibetNLP/cino-base-v2_TNCC-title_tsheg](https://huggingface.co/UTibetNLP/cino-base-v2_TNCC-title_tsheg)      |
+| cino-base-v2_TNCC-document_tsheg  |  [https://huggingface.co/UTibetNLP/cino-base-v2_TNCC-document_tsheg](https://huggingface.co/UTibetNLP/cino-base-v2_TNCC-document_tsheg)   |
+|         cino-base-v2_TUSA         |                 [https://huggingface.co/UTibetNLP/cino-base-v2_TUSA](https://huggingface.co/UTibetNLP/cino-base-v2_TUSA)                  |
+|  cino-large-v2_TNCC-title_tsheg   |    [https://huggingface.co/UTibetNLP/cino-large-v2_TNCC-title_tsheg](https://huggingface.co/UTibetNLP/cino-large-v2_TNCC-title_tsheg)     |
+| cino-large-v2_TNCC-document_tsheg | [https://huggingface.co/UTibetNLP/cino-large-v2_TNCC-document_tsheg](https://huggingface.co/UTibetNLP/cino-large-v2_TNCC-document_tsheg)  |
+|        cino-large-v2_TUSA         |                [https://huggingface.co/UTibetNLP/cino-large-v2_TUSA](https://huggingface.co/UTibetNLP/cino-large-v2_TUSA)                 |
