@@ -4,7 +4,7 @@
 
 This repo is the fine-tuning part in the paper below.
 
-***Pay Attention to the Robustness of Chinese Minority Language Models! Syllable-level Textual Adversarial Attack on Tibetan Script (Cao et al., ACL 2023 Workshop - TrustNLP)***
+***[Pay Attention to the Robustness of Chinese Minority Language Models! Syllable-level Textual Adversarial Attack on Tibetan Script](https://trustnlpworkshop.github.io/papers/6.pdf) (Cao et al., ACL 2023 Workshop - TrustNLP)***
 
 ## Environment
 
