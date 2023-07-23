@@ -4,7 +4,7 @@
 
 This repo is the fine-tuning part in the paper below.
 
-***[Pay Attention to the Robustness of Chinese Minority Language Models! Syllable-level Textual Adversarial Attack on Tibetan Script](https://trustnlpworkshop.github.io/papers/6.pdf) (Cao et al., ACL 2023 Workshop - TrustNLP)***
+***[Pay Attention to the Robustness of Chinese Minority Language Models! Syllable-level Textual Adversarial Attack on Tibetan Script](https://aclanthology.org/2023.trustnlp-1.4) (Cao et al., ACL 2023 Workshop - TrustNLP)***
 
 ## Environment
 
@@ -89,3 +89,24 @@ You can also find all the fine-tuned LMs in our paper on Hugging Face.
 |  cino-large-v2_TNCC-title_tsheg   |    [https://huggingface.co/UTibetNLP/cino-large-v2_TNCC-title_tsheg](https://huggingface.co/UTibetNLP/cino-large-v2_TNCC-title_tsheg)     |
 | cino-large-v2_TNCC-document_tsheg | [https://huggingface.co/UTibetNLP/cino-large-v2_TNCC-document_tsheg](https://huggingface.co/UTibetNLP/cino-large-v2_TNCC-document_tsheg)  |
 |        cino-large-v2_TUSA         |                [https://huggingface.co/UTibetNLP/cino-large-v2_TUSA](https://huggingface.co/UTibetNLP/cino-large-v2_TUSA)                 |
+
+## Citation
+
+If you think our work useful, please kindly cite our paper.
+
+```
+@inproceedings{cao-etal-2023-pay-attention,
+    title = "Pay Attention to the Robustness of {C}hinese Minority Language Models! Syllable-level Textual Adversarial Attack on {T}ibetan Script",
+    author = "Cao, Xi  and
+      Dawa, Dolma  and
+      Qun, Nuo  and
+      Nyima, Trashi",
+    booktitle = "Proceedings of the 3rd Workshop on Trustworthy Natural Language Processing (TrustNLP 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.trustnlp-1.4",
+    pages = "35--46"
+}
+```
