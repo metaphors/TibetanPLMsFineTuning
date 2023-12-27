@@ -2,16 +2,22 @@ from transformers import XLMRobertaForSequenceClassification
 from transformers import TrainingArguments
 from datasets import load_dataset
 from transformers import XLMRobertaTokenizer
+from transformers import DataCollatorWithPadding
 from evaluate import load
 from numpy import argmax
 from transformers import Trainer
 
-model = XLMRobertaForSequenceClassification.from_pretrained("../model/cino-base-v2", num_labels=12)
+id2label = {0: "Politics", 1: "Economics", 2: "Education", 3: "Tourism", 4: "Environment", 5: "Language", 6: "Literature", 7: "Religion", 8: "Arts", 9: "Medicine", 10: "Customs", 11: "Instruments"}
+label2id = {"Politics": 0, "Economics": 1, "Education": 2, "Tourism": 3, "Environment": 4, "Language": 5, "Literature": 6, "Religion": 7, "Arts": 8, "Medicine": 9, "Customs": 10, "Instruments": 11}
+
+model = XLMRobertaForSequenceClassification.from_pretrained("../model/cino-base-v2", num_labels=12, id2label=id2label, label2id=label2id)
 
 training_args = TrainingArguments(
     output_dir="../saved_model/cino-base-v2_tncc-document",
     evaluation_strategy="epoch",
     save_strategy="epoch",
+    save_safetensors=False,
+    save_only_model=True,
     load_best_model_at_end=True,
     metric_for_best_model="macro-f1",
     per_device_train_batch_size=32,
@@ -31,6 +37,8 @@ def tokenize(examples):
 
 
 tokenized_dataset = dataset.map(tokenize, batched=True)
+
+data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
 
 accuracy_metric = load("accuracy")
 precision_metric = load("precision")
@@ -66,6 +74,7 @@ trainer = Trainer(
     train_dataset=tokenized_dataset["train"].shuffle(),
     eval_dataset=tokenized_dataset["validation"].shuffle(),
     tokenizer=tokenizer,
+    data_collator=data_collator,
     compute_metrics=compute_metrics
 )
 
