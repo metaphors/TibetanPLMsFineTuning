@@ -111,6 +111,25 @@ You can also find all the fine-tuned LMs in our paper on Hugging Face.
 If you think our work useful, please kindly cite our paper.
 
 ```
+@inproceedings{10.1145/3589335.3652503,
+    author = {Cao, Xi and Qun, Nuo and Gesang, Quzong and Zhu, Yulei and Nyima, Trashi},
+    title = {Multi-Granularity Tibetan Textual Adversarial Attack Method Based on Masked Language Model},
+    year = {2024},
+    isbn = {9798400701726},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3589335.3652503},
+    doi = {10.1145/3589335.3652503},
+    booktitle = {Companion Proceedings of the ACM on Web Conference 2024},
+    pages = {1672–1680},
+    numpages = {9},
+    keywords = {language model, robustness, textual adversarial attack, tibetan},
+    location = {Singapore, Singapore},
+    series = {WWW '24}
+}
+```
+
+```
 @inproceedings{cao-etal-2023-pay-attention,
     title = "Pay Attention to the Robustness of {C}hinese Minority Language Models! Syllable-level Textual Adversarial Attack on {T}ibetan Script",
     author = "Cao, Xi  and
